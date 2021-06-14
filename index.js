@@ -28,11 +28,19 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+
+  - Counter 1 focuses on creating the full array and specifies everything. Technically there is more code involved.
+  - Counter 2 is higher function which requires less code and can be recycled. This is a better method but both work!
   
   2. Which of the two uses a closure? How can you tell?
+
+  - Counter 1 uses closure because the const counter1 = counterMaker, basically it tells the terminal/computer to look for countermaker in it's function.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+     - Counter 1 would be necessary/preferred when dealing with specific results while counter 2 can be used to pull more information/ will be able to pull it when necessary
+
 */
 
 // counter1 code
@@ -62,8 +70,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    return Math.floor(Math.random() * 3);
 }
 
 
@@ -81,8 +89,8 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(innings, finalScore){
+  return Math.floor(math.random () * 9);
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
